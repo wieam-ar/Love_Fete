@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/stylle.css">
     <title>Love Fete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
@@ -63,20 +64,39 @@
 
                     <h1 class="hero-title" style="font-size: 3rem; margin-top: 15%;">Rencontre des voyageurs.</h1>
                     <p class="hero-subtitle">Choisir où te loger et on te montrera avec qui !</p>
-                    <div class="row p-5">
-                        <div class="col"></div>
-                    </div>
-
 
                 </div>
 
             </div>
         </div>
-        </div>
+
+    </section>
+    <section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 image">
+                    <img src="./pics/evets.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="about">
+                        <h2 class="abouttitle">About Love Fête</h2>
+                        <p class="aboutparag">
+                            I'm [Your Name], a passionate event planner with a purpose. My goal goes beyond creating temporary joy...
+
+                            A portion of my income is dedicated to supporting orphans and elderly homes. Each celebration with us contributes to putting a smile on forgotten faces.
+                        </p>
+                    </div>
+                     <div class="flex items-center mt-8">
+                        <div class="bg-pink-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-heart text-pink-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Every event creates a ripple of happiness</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
-        </div>
-        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
