@@ -86,7 +86,7 @@
                             A portion of my income is dedicated to supporting orphans and elderly homes. Each celebration with us contributes to putting a smile on forgotten faces.
                         </p>
                     </div>
-                     <div class="flex items-center mt-8">
+                    <div class="flex items-center mt-8">
                         <div class="bg-pink-100 rounded-full p-3 mr-4">
                             <i class="fas fa-heart text-pink-600 text-xl"></i>
                         </div>
@@ -94,10 +94,134 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
     </section>
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row s">
+                <div class="col-md-4">
+                    <!-- Wedding Service -->
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?auto=format&fit=crop&w=600&q=80" class="card-image" alt="Wedding Planning Service">
+                        <div class="card-body">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-ring"></i>
+                                </div>
+                                <h3 class="service-title">Weddings</h3>
+                            </div>
+                            <p class="service-description">Create your dream wedding with expert planning and elegant coordination tailored to your unique vision.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">Starting from $2,500</span>
+                            <button class="learn-more-btn" aria-label="Learn more about wedding services">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <!-- Birthday Service -->
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" class="card-image" alt="Birthday Party Planning">
+                        <div class="card-body">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-birthday-cake"></i>
+                                </div>
+                                <h3 class="service-title">Birthday Parties</h3>
+                            </div>
+                            <p class="service-description">Memorable themes and joy for all ages with vibrant celebrations that create lasting memories.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">Starting from $500</span>
+                            <button class="learn-more-btn" aria-label="Learn more about birthday party services">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <!-- Graduation Service -->
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1599943821034-8cb5c7526922?q=80&w=459&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image" alt="Graduation Event Planning">
+                        <div class="card-body">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="service-title">Graduation Events</h3>
+                            </div>
+                            <p class="service-description">Celebrate milestones in a stylish and meaningful way that honors your achievements.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">Starting from $800</span>
+                            <button class="learn-more-btn" aria-label="Learn more about graduation event services">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Buffet Service -->
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" class="card-image" alt="Buffet and Decoration Services">
+                        <div class="card-body">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h3 class="service-title">Buffets & Decoration</h3>
+                            </div>
+                            <p class="service-description">Delicious catering and stunning décor to enhance your event with exceptional taste and style.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">Starting from $300</span>
+                            <button class="learn-more-btn" aria-label="Learn more about buffet and decoration services">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Graduation Service -->
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1599943821034-8cb5c7526922?q=80&w=459&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-image" alt="Graduation Event Planning">
+                        <div class="card-body">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="service-title">Graduation Events</h3>
+                            </div>
+                            <p class="service-description">Celebrate milestones in a stylish and meaningful way that honors your achievements.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">Starting from $800</span>
+                            <button class="learn-more-btn" aria-label="Learn more about graduation event services">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
