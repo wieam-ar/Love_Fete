@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Fête - Event Planning with Heart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+        }
+        
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-pink-600 text-2xl">Love Fête</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="py-4 px-2 text-pink-600 border-b-4 border-pink-600 font-semibold">Home</a>
+                    <a href="#about" class="py-4 px-2 text-gray-500 hover:text-pink-600 transition duration-300">About</a>
+                    <a href="#services" class="py-4 px-2 text-gray-500 hover:text-pink-600 transition duration-300">Services</a>
+                    <a href="#impact" class="py-4 px-2 text-gray-500 hover:text-pink-600 transition duration-300">Our Impact</a>
+                    <a href="#testimonials" class="py-4 px-2 text-gray-500 hover:text-pink-600 transition duration-300">Testimonials</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-pink-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="#home" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">About</a></li>
+                <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="#impact" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">Our Impact</a></li>
+                <li><a href="#testimonials" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">Testimonials</a></li>
+                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-pink-600 hover:text-white transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">We organize celebrations with elegance and love</h1>
+            <p class="text-xl md:text-2xl mb-8">Every event brings a new joy, for you and for those in need <span class="heartbeat text-red-500">♥️</span></p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Discover Our Services</a>
+                <a href="#impact" class="bg-white hover:bg-gray-100 text-pink-600 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Support Our Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a05d44d825?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Planner" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Love Fête</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        I'm [Your Name], a passionate event planner with a purpose. My goal goes beyond creating temporary joy...
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        A portion of my income is dedicated to supporting orphans and elderly homes. Each celebration with us contributes to putting a smile on forgotten faces.
+                    </p>
+                    <div class="flex items-center mt-8">
+                        <div class="bg-pink-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-heart text-pink-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Every event creates a ripple of happiness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Our Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Wedding Service -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Wedding Planning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-ring text-pink-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Weddings</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Create your dream wedding with our expert planning and coordination services.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-pink-600 font-bold">Starting from $2,500</span>
+                            <button class="text-pink-600 hover:text-pink-800 transition duration-300">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Birthday Service -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Birthday Party" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-birthday-cake text-pink-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Birthday Parties</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Memorable celebrations for all ages with creative themes and decorations.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-pink-600 font-bold">Starting from $500</span>
+                            <button class="text-pink-600 hover:text-pink-800 transition duration-300">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Graduation Service -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df9012c9eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Graduation Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-graduation-cap text-pink-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Graduation Events</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Celebrate academic achievements with style and sophistication.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-pink-600 font-bold">Starting from $800</span>
+                            <button class="text-pink-600 hover:text-pink-800 transition duration-300">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buffet & Decoration Service -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Buffet & Decoration" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-utensils text-pink-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Buffets & Decoration</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Exquisite catering and stunning decor to elevate any event.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-pink-600 font-bold">Starting from $300</span>
+                            <button class="text-pink-600 hover:text-pink-800 transition duration-300">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-pink-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Your Joy Creates Good</h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Let your celebration leave a bigger impact <span class="text-pink-200">🌸</span>
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        With every booking, you take part in doing good. Each month, a portion of our profit is used to buy essentials and donate to orphanages and elderly homes.
+                    </p>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        We also organize monthly humanitarian visits <span class="text-red-300">❤️</span>
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white text-pink-600 px-4 py-2 rounded-full font-medium flex items-center">
+                            <i class="fas fa-child mr-2"></i> Orphan Support
+                        </div>
+                        <div class="bg-white text-pink-600 px-4 py-2 rounded-full font-medium flex items-center">
+                            <i class="fas fa-hands-helping mr-2"></i> Elderly Care
+                        </div>
+                        <div class="bg-white text-pink-600 px-4 py-2 rounded-full font-medium flex items-center">
+                            <i class="fas fa-heartbeat mr-2"></i> Monthly Visits
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1503454537195-29dc400eb6cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Helping Hands" class="rounded-lg shadow-lg h-64 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1583900985737-6d0495555783?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Community Support" class="rounded-lg shadow-lg h-64 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food Donation" class="rounded-lg shadow-lg h-64 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Happy Children" class="rounded-lg shadow-lg h-64 w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">What Our Clients Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Soumia" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Soumia</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "We hired Love Fête for our wedding, and the result was even more beautiful than we imagined... And knowing I contributed to a cause made it even better!"
+                    </p>
+                    <div class="mt-4 text-pink-600">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Nadia" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Nadia</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Elegant service, and everything done with care and heart ❤️ The graduation party they organized for my son was perfect, and I loved that part of the proceeds went to charity."
+                    </p>
+                    <div class="mt-4 text-pink-600">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Get In Touch</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="name">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="event">Event Type</label>
+                            <select id="event" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                                <option>Wedding</option>
+                                <option>Birthday Party</option>
+                                <option>Graduation</option>
+                                <option>Other Celebration</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Options</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 rounded-full p-3 mr-4">
+                                    <i class="fas fa-phone-alt text-pink-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 rounded-full p-3 mr-4">
+                                    <i class="fab fa-whatsapp text-pink-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">WhatsApp</h4>
+                                    <p class="text-gray-600">Message us directly</p>
+                                    <a href="#" class="text-pink-600 hover:text-pink-800 transition duration-300">Click to chat</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 rounded-full p-3 mr-4">
+                                    <i class="fab fa-instagram text-pink-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Instagram</h4>
+                                    <p class="text-gray-600">Follow us @lovefete</p>
+                                    <a href="#" class="text-pink-600 hover:text-pink-800 transition duration-300">View profile</a>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6 border-t border-gray-200">
+                                <h4 class="font-bold text-gray-800 mb-4">Direct Support</h4>
+                                <p class="text-gray-600 mb-4">Want to support our humanitarian work directly?</p>
+                                <button class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 flex items-center">
+                                    <i class="fas fa-heart mr-2"></i> Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold text-pink-400 mb-4">Love Fête</h3>
+                    <p class="text-gray-400 max-w-md">
+                        Creating beautiful events while making a difference in our community. Every celebration with us supports those in need.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                            <li><a href="#impact" class="text-gray-400 hover:text-white transition duration-300">Our Impact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Weddings</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Birthdays</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Graduations</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Buffets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-400">contact@lovefete.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Love Fête. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition duration-300 opacity-0 invisible hover:bg-pink-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form submission (simulated)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

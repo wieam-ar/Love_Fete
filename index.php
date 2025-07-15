@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -221,7 +221,70 @@
             </div>
         </div>
     </section>
-   
+    <section class="sectio4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-content">
+                        <h2 class="section-title">
+                            Your Joy Creates <span class="highlight-text">Good</span>
+                        </h2>
+                        <p class="description">
+                            Let your celebration leave a bigger impact <span class="emoji">🌸</span>
+                        </p>
+                        <p class="description">
+                            With every booking, you take part in doing good. Each month, a portion of our profit is used to buy essentials and donate to orphanages and elderly homes.
+                        </p>
+                        <p class="description">
+                            We also organize monthly humanitarian visits <span class="emoji">❤️</span>
+                        </p>
+                        <div class="tags-container">
+                            <div class="tag">
+                                <i class="fas fa-child"></i>
+                                <span>Orphan Support</span>
+                            </div>
+                            <div class="tag">
+                                <i class="fas fa-hands-helping"></i>
+                                <span>Elderly Care</span>
+                            </div>
+                            <div class="tag">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Monthly Visits</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="images-grid">
+                        <div class="image-item">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGVscGluZyUyMEhhbmRzfGVufDB8fDB8fHww" alt="Helping Hands">
+                        </div>
+                        <div class="image-item">
+                            <img src="./pics/evets.jpg" alt="Community Support">
+                        </div>
+                        <div class="image-item">
+                            <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food Donation">
+                        </div>
+                        <div class="image-item">
+                            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Happy Children">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="sectio5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
